@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>How Did We Get Here? - Dive Into HTML5</title>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "myStyle.css" />
+</head>
+<body>
+<br>
+<p>You are here: <a href="http://diveintohtml5.info/index.html">Home </a>&#9658<a
+        href="http://diveintohtml5.info/table-of-contents.html#past">Dive Into HTML5</a>&#9658</p>
+<br>
+<h1 align="center">№1.</h1>
+<h1 align="center">HOW DID WE GET HERE?</h1>
+<br>
+<h4 align="center"><a href="http://diveintohtml5.info/past.html">show table of contents</a></h4>
+<br>
+<p align="center"><img src="elsePhoto.PNG"></p>
+<br>
+<h3 align="center">DIVING IN</h3>
+<p><img src="R.PNG" width="110" , height="110" , class="photo">ecently, I stumbled across a quote from a Mozilla
+    developer
+    <a href="http://lists.w3.org/Archives/Public/public-html/2010Jan/0107.html">about the tension inherent in
+        creating standards</a>:</p>
+<br>
+<p>Implementations and specifications have to do a delicate dance together. You don’t want implementations</p>
+<p align="left">to happen before the specification is finished, because people start depending on the details of</p>
+<div class="text">
+    <p>implementations and that constrains the specification. However, you also don’t want the specification to
+        be</p>
+    <p>finished before there are implementations and author experience with those implementations, because you need
+        the</p>
+    <p>feedback. There is unavoidable tension here, but we just have to muddle on through.</p>
+</div>
+<br>
+<p>Keep this quote in the back of your mind, and let me explain how HTML5 came to be.</p>
+<p align="center"><img src="openclipart.org_johnny_automatic_animals_on_see_saw.png" width="526" height="116"
+                       alt="animals on a seesaw"></p>
+<br>
+<p align="center"><img src="elsePhoto.PNG"></p>
+<br>
+<h1 align="center">MIME TYPES</h1>
+<br>
+<p>This book is about HTML5, not previous versions of HTML, and not any version of XHTML. But to understand the history
+    of</p>
+<p>HTML5 and the motivations behind it, you need to understand a few technical details first. Specifically, MIME
+    types.</p>
+<br>
+<p>Every time your web browser requests a page, the web server sends “headers” before it sends the actual page markup.
+    These</p>
+<p>headers are normally invisible, although there are web development tools that will make them visible if you’re
+    interested. But</p>
+<p>the headers are important, because they tell your browser how to interpret the page markup that follows. The most
+    important</p>
+<p>header is called Content-Type, and it looks like this:</p>
+<br>
+<div class="text">
+    <p>Content-Type: text/html</p>
+</div>
+<br>
+<p>“text/html” is called the “content type” or “MIME type” of the page. This header is the only thing that determines
+    what a</p>
+<p>particular resource truly is, and therefore how it should be rendered. Images have their own MIME types (image/jpeg
+    for</p>
+<p>JPEG images, image/png for PNG images, and so on). JavaScript files have their own MIME type. CSS stylesheets have
+    their</p>
+<p>own MIME type. Everything has its own MIME type. The web runs on MIME types.</p>
+<br>
+<p>Of course, reality is more complicated than that. The first generation of web servers (and I’m talking web servers
+    from 1993)</p>
+<p>didn’t send the Content-Type header because it didn’t exist yet. (It wasn’t invented until 1994.) For compatibility
+    reasons that</p>
+<p>date all the way back to 1993, some popular web browsers will ignore the Content-Type header under certain
+    circumstances</p>
+<p>(This is called “content sniffing.”) But as a general rule of thumb, everything you’ve ever looked at on the web —
+    HTML</p>
+<p>pages, images, scripts, videos, PDFs, anything with a URL — has been served to you with a specific MIME type in
+    the</p>
+<p>Content-Type header.</p>
+<br>
+<p>Tuck that under your hat. We’ll come back to it.</p>
+<br>
+<br>
+<p align="center"><img src="elsePhoto.PNG"></p>
+<br>
+<div class="other_text">
+    <h1 align="center">A LONG DIGRESSION INTO HOW STANDARDS</h1>
+    <h1 align="center">ARE MADE</h1>
+</div>
+<br>
+<p>Why do we have an <.img> element? That’s not a question you hear every
+    <img src="openclipart.org_johnny_automatic_monkey_reading.png" align="right"></p>
+<p>day. Obviously someone must have created it. These things don’t just</p>
+<p>appear out of nowhere. Every element, every attribute, every feature of</p>
+<p>HTML that you’ve ever used — someone created them, decided how they</p>
+<p>should work, and wrote it all down. These people are not gods, nor are</p>
+<p>they flawless. They’re just people. Smart people, to be sure. But just</p>
+<p>people.</p>
+<br>
+<p>One of the great things about standards that are developed “out in the</p>
+<p>open” is that you can go back in time and answer these kinds of</p>
+<p>questions. Discussions occur on mailing lists, which are usually archived</p>
+<p>and publicly searchable. So I decided to do a bit of “email archaeology” to</p>
+<p>try to answer the question, “Why do we have an <.img> element?” I had</p>
+<p>to go back to before there was an organization called the World Wide</p>
+<p>Web Consortium (W3C). I went back to the earliest days of the web,</p>
+<p>when you could count the number of web servers with both hands and</p>
+<p>maybe a couple of toes.</p>
+<br>
+<div class="other_other_text">
+    <p>(There are a number of typographical errors in the following quotes. I have decided to leave them intact for
+        historical accuracy.)</p>
+</div>
+<br>
+<p align="center"><img src="elsePhoto.PNG"></p>
+<br>
+<h1 align="center">FURTHER READING</h1>
+<br>
+<ul>
+    <li><a href="http://hixie.ch/commentary/web/history">The History of the Web</a>, an old draft by Ian Hickson</li>
+    <li><a href="http://www.w3.org/html/wg/wiki/History">HTML/History</a>, by Michael Smith, Henri Sivonen, and others
+    </li>
+    <li><a href="http://www.atendesigngroup.com/blog/brief-history-of-html">A Brief History of HTML</a>, by Scott Reynen
+    </li>
+</ul>
+<br>
+<p align="center"><img src="elsePhoto.PNG"></p>
+<br>
+<p>This has been “How Did We Get Here?” The <a href="table-of-contents.html">full table of contents</a> has more if
+    you’d like to keep reading.</p>
+<br>
+
+<div class="border">
+    <div class="border_next">DID YOU KNOW?</div>
+    <div class="other_other_other_text">
+        <p>In association with Google Press, O’Reilly is distributing this book in a variety of
+            <img src="money.PNG"
+                 align="right"
+                 width="222"
+                 height="272"></p>
+        <p>formats, including paper, ePub, Mobi, and DRM-free PDF. The paid edition is called</p>
+        <p>“HTML5: Up & Running,” and it is available now. This chapter is included in the paid</p>
+        <p>edition.</p>
+        <br>
+        <p>If you liked this chapter and want to show your appreciation, you can <a
+                href="https://www.amazon.com/HTML5-Up-Running-Mark-Pilgrim/dp/0596806027?ie=UTF8&tag=diveintomark-20&creativeASIN=0596806027">buy
+            “HTML5: UP
+        <p> & Running” with this affiliate link </a> or <a href="dfg">buy an electronic edition directly from
+            O’Reilly</a>. </p>
+        <p>You’ll get a book, and I’ll get a buck. I do not currently accept direct donations.</p>
+        <br>
+    </div>
+</div>
+<br>
+<div class="the_end">
+    <p align="center">Copyright MMIX–MMXI<a href="http://diveintohtml5.info/about.html" style="color: black "> Mark
+        Pilgrim</a></p>
+</div>
+<br>
+<form action="http://www.google.com/cse">
+    <div align="center"><input type="hidden" name="cx" value="017884302975346027366:bgclqh8nvse">
+        <input type="hidden" name="ie" value="UTF-8">
+        <input type="search" name="q" size="25" placeholder="powered by Google™">&nbsp;
+        <input type="submit" name="sa" value="Search">
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background: url("fon.jpg") no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.nav ul {
+    background-color: black;
+    display: flex;
+    width: 85%;
+    height: 12vh;
+    margin: auto;
+    max-width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav li, .dropdown {
+    font-family: Georgia, serif;
+    font-size: 110%;
+    padding: 1rem 3rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    min-width: 100px;
+    margin: auto;
+}
+
+.nav li:hover, .dropdown-child li:hover {
+    background-image: url('button.png');
+    background-size: 100% 100%;
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    font-weight: bold;
+}
+
+.dropdown-child li:active {
+    transform: translateY(5px);
+}
+
+@keyframes spring {
+    15% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.2, 1.1);
+    }
+    40% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(0.95, 0.95);
+    }
+    75% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.05, 1);
+    }
+    100% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+table {
+    border-spacing: 40px 1px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 30%;
+    display: inline-flex;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+tr {
+    background: #56433D;
+    color: black;
+    border-right: 2px solid;
+}
+
+td {
+    background-color: white;
+    vertical-align: middle;
+    padding: 3px;
+    font-size: 50px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.table {
+    min-width: border-box;
+    padding: 0 0 7% 7%;
+    margin: 0;
+}
+
+.text {
+    font-size: 50%;
+}
+
+.other_text {
+    font-size: 80%;
+}
+
+.table .one:hover {
+    transform: translateX(25%) scale(2);
+    transition: 0.5s linear
+}
+
+.table .two:hover {
+    transform: translateY(25%) scale(2);
+    transition: 0.5s linear
+}
+
+.table .three:hover {
+    transform: translateX(-25%) scale(2);
+    transition: 0.5s linear
+}
+
+.table .four:hover {
+    transform: translateX(25%) scale(2);
+    transition: 0.5s linear
+}
+
+.table .five:hover {
+    transform: translateY(25%) scale(2);
+    transition: 0.5s linear
+}
+
+.table .six:hover {
+    transform: translateX(-25%) scale(2);
+    transition: 0.5s linear
+}
+
+.table table {
+    animation-name: expandUp;
+    -webkit-animation-name: expandUp;
+    animation-duration: 0.7s;
+    -webkit-animation-duration: 0.7s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+}
+
+@keyframes expandUp {
+    0% {
+        transform: translateY(100%) scale(0.6) scaleY(0.5);
+    }
+    60% {
+        transform: translateY(-7%) scaleY(1.12);
+    }
+    75% {
+        transform: translateY(3%);
+    }
+    100% {
+        transform: translateY(0%) scale(1) scaleY(1);
+    }
+}
+
+@-webkit-keyframes expandUp {
+    0% {
+        -webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
+    }
+    60% {
+        -webkit-transform: translateY(-7%) scaleY(1.12);
+    }
+    75% {
+        -webkit-transform: translateY(3%);
+    }
+    100% {
+        -webkit-transform: translateY(0%) scale(1) scaleY(1);
+    }
+}
+
+footer {
+    background: black;
+    height: 60px;
+    padding: 15px 0 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    line-height: 2px;
+}
+
+footer p, footer a {
+    text-decoration: none;
+    font-size: 90%;
+    line-height: 1.6;
+    color: white;
+}

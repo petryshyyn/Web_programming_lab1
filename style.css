@@ -1,0 +1,153 @@
+* {
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+p{
+    font-family: Georgia, serif;
+    font-size: 110%;
+    max-width: 89%;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    color: black;
+    font-weight: 600;
+}
+
+.logo{
+    height: 95%;
+    width: 5%;
+    min-width: 70px;
+}
+
+h1{
+    font-size: 200%;
+    color: black;
+    font-weight: 600;
+}
+
+body{
+    background: url("fon.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+ul{
+    background-color: black;
+    display: flex;
+    width: 90%;
+    height: 12vh;
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+
+}
+
+
+li {
+    text-decoration: none;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    color: white;
+    padding: 2px;
+}
+
+li:hover , a:hover{
+    background-image: url('button.png');
+    background-size: 100% 100%;
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    font-weight: bold;
+    text-decoration: none;
+}
+li:active {
+    transform: translateY(5px);
+}
+
+@keyframes spring {
+    15% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.2, 1.1);
+    }
+    40% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(0.95, 0.95);
+    }
+    75% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.05, 1);
+    }
+    100% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+.dropdown-child {
+    display: none;
+    background-color: black;
+
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+    padding-top: 40%;
+}
+.step {
+    min-height: 250px;
+}
+
+table{
+    border-spacing: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+
+    min-width: 80%;
+    position: center;
+}
+tr {
+    padding: 100% 100%;
+    background: black;
+    color: #F9C941;
+    border-right: 2px solid;
+}
+
+td {
+    background-color: white;
+    vertical-align: middle;
+
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+footer {
+    background: black;
+    height: 60px;
+    padding: 15px 0 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    line-height: 2px;
+}
+footer p, footer a{
+    text-decoration: none;
+    font-size: 90%;
+    line-height: 0.2;
+    color: white;
+}

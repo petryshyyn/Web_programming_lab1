@@ -1,34 +1,56 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>NEFFEX</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet"
           type="text/css"
           href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav>
-<ul>
-    <img class="logo" src="logo.png">
-    <a href="http://localhost:63342/Lab2/index.html?_ijt=3hladlikbmd7l1oqm9asqsug5f"><li>Main</li></a>
-    <a href="http://localhost:63342/Lab3/index.html?_ijt=9u6btg4egr3bhrobo27bak87n3"><li>News</li></a>
-    <div class="dropdown">
-        <li>For Fans</li>
-        <div class="dropdown-child">
-            <li>Fan club</li>
-            <li>Тour schedule</li>
-            <li>Lyrics</li>
+<nav class="navbar navbar-1 navbar-expand-sm fixed-top navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="logo.png" width="70" height="70"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">For Fans</a>
+                    <ul class="dropdown-menu navbar-dark bg-dark nav-item" role="menu">
+                        <li>
+                            <a class="nav-link" href="#">Fan club</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Tour schedule</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Lyrics</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fan appeal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Concert venue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Admin</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <li>Fans appeal</li>
-    <li>Concert venue</li>
-    <li>Admin</li>
-</ul>
 </nav>
 <p class="step"></p>
 <h1 align="center">ABOUT NEFFEX</h1>
@@ -54,13 +76,6 @@
     are beginning to spread to people through other means of social media and famous YouTubers are showcasing
     their music in videos. Although Neffex has only just begun their music career, the popularity that is already
     building can make this project a success.
-</p>
-<br>
-<p>
-Although the music industry is a tough business to grow in, it is not impossible to become successful. If the
-passion and talent is there, then that is half the battle. Neffex is ready to rock and will not let anything get in
-the way of their success. Dropping a new song every week and having an ever-growing fan base, things are
-only looking up for Neffex.
 </p>
 <br>
 <h1 align="center">ALBUMS</h1>
@@ -89,7 +104,7 @@ only looking up for Neffex.
     </tr>
 </table>
 <br>
-<footer>
+<footer class="navbar-dark bg-dark">
     <p>© 2015 NEFFEX</p>
     <p><a href="  https://www.facebook.com/Neffexmusic/">Facebook</a>
         <a href="https://www.youtube.com/channel/UCBefBxNTPoNCQBU_Lta6Nvg">YouTube</a>

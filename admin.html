@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEFFEX</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-1 navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="photo/logo.png" width="70" height="70"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">For Fans</a>
+                    <ul class="dropdown-menu navbar-dark bg-dark nav-item" role="menu">
+                        <li>
+                            <a class="nav-link" href="#">Fan club</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="tour_shedule.html">Tour schedule</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Lyrics</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fans_apeal.html">Fan appeal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="concert_venue.html">Concert venue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<p class="step"></p>
+<main>
+    <div class="background_img_2"></div>
+    <div class="container-fluid" style="margin: 5% 0 0 0">
+        <div class="d-flex justify-content-center">
+            <input type="file" class="btn " onchange="loadFile(event)"
+                   style="display: inline-block; height: 1%; margin-right: 40px;">
+            <div><img src="" id="output"></div>
+        </div>
+        <div class="d-flex justify-content-center" style="margin-top: 7%">
+            <button type="button" id="addNews" class="btn"
+                    style="display: inline-block; height: 1%; margin-right: 50px;">Send
+            </button>
+            <input placeholder="Заголовок" type="text" id="titleBody" name="comment2" size="40">
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <textarea placeholder="Текст" id="textBody" name="comment" cols="43" rows="10"
+                      style="margin-left: 113px"></textarea>
+        </div>
+    </div>
+</main>
+<br>
+<footer class="navbar-dark bg-dark">
+    <p>© 2015 NEFFEX</p>
+    <p><a href="  https://www.facebook.com/Neffexmusic/">Facebook</a>
+        <a href="https://www.youtube.com/channel/UCBefBxNTPoNCQBU_Lta6Nvg">YouTube</a>
+    </p>
+</footer>
+</body>
+<script src="js/admin.js"></script>
+</html>

@@ -1,0 +1,73 @@
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+
+.nav-item{
+    width: 15%;
+}
+
+.step {
+    min-height: 250px;
+}
+
+body{
+    background: url("fon.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+p{
+    font-family: Georgia, serif;
+    font-size: 110%;
+    max-width: 89%;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 200%;
+    color: black;
+    font-weight: 600;
+}
+
+table{
+    border-spacing: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    position: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+tr {
+    background: black;
+    color: #F9C941;
+    border-right: 2px solid;
+}
+
+td {
+    background-color: white;
+    vertical-align: middle;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+footer {
+    height: 10%;
+    padding: 10px 0 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 2px;
+}
+
+footer p, footer a {
+    text-decoration: none;
+    font-size: 90%;
+    line-height: 0.2;
+    color: white;
+}
